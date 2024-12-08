@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AD360 Clone</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="	https://drbgg29kvmub6.cloudfront.net/assets/ad360/Ad360_Header.svg" alt="Logo">
+      </div>
+      <div class="hamburger" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2 data-aos="fade-up">Welcome to AD360</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Revolutionize your advertising strategy today.</p>
+      <a href="#services" class="btn" data-aos="zoom-in">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 data-aos="fade-right">Our Services</h2>
+      <div class="service-list">
+        <div class="service-item" data-aos="flip-left">
+          <h3>SEO Optimization</h3>
+          <p>Boost your website's traffic.</p>
+        </div>
+        <div class="service-item" data-aos="flip-left" data-aos-delay="100">
+          <h3>Social Media Marketing</h3>
+          <p>Expand your audience reach.</p>
+        </div>
+        <div class="service-item" data-aos="flip-left" data-aos-delay="200">
+          <h3>Content Creation</h3>
+          <p>Engaging content for your brand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <h2 data-aos="fade-up">About Us</h2>
+    <p data-aos="fade-up" data-aos-delay="100">
+      AD360 is a leading digital marketing agency focused on delivering innovative solutions to help businesses grow in the ever-evolving digital landscape. 
+      Our team is passionate about creating customized strategies for each client, using data-driven insights to drive success.
+    </p>
+
+    <div class="about-details">
+      <div class="about-card" data-aos="flip-left" data-aos-delay="200">
+        <h3>Our Mission</h3>
+        <p>Our mission is to empower businesses with the tools and strategies needed to navigate and succeed in the digital age. We aim to drive measurable results through creativity, innovation, and data-driven decision-making.</p>
+      </div>
+      <div class="about-card" data-aos="flip-left" data-aos-delay="300">
+        <h3>Our Vision</h3>
+        <p>Our vision is to become the go-to digital marketing partner for companies worldwide, offering the most advanced tools and strategies to achieve unparalleled success in their online presence.</p>
+      </div>
+      <div class="about-card" data-aos="flip-left" data-aos-delay="400">
+        <h3>Our Values</h3>
+        <p>We value creativity, integrity, and collaboration. We believe in fostering long-term relationships with our clients by delivering exceptional results and always acting with transparency and honesty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 data-aos="fade-up">Contact Us</h2>
+    <p data-aos="fade-up" data-aos-delay="100">We'd love to hear from you! Please reach out to us with any questions or comments.</p>
+
+    <div class="contact-content">
+      <!-- Contact Form -->
+      <form action="submit_form.php" method="POST" class="contact-form" data-aos="fade-up" data-aos-delay="200">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Contact Information -->
+      <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+        <h3>Our Location</h3>
+        <p>123 Digital Avenue, Suite 500<br>City, Country</p>
+
+        <h3>Email Us</h3>
+        <p><a href="mailto:paraspalawat187@gmail.com">paraspalawat187@gmail.com</a></p>
+
+        <h3>Call Us</h3>
+        <p><a href="tel:+91 8191055623">+91 8191055623</a></p>
+      </div>
+    </div>
+
+    
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing">
+  <div class="container">
+    <h2 data-aos="fade-up">Our Pricing Plans</h2>
+    <p data-aos="fade-up" data-aos-delay="100">Choose the perfect plan for your business. We offer flexible pricing to suit your needs.</p>
+
+    <div class="pricing-cards">
+      <div class="pricing-card" data-aos="flip-left" data-aos-delay="200">
+        <h3>Basic Plan</h3>
+        <p class="price">$19/month</p>
+        <ul>
+          <li>1 Website</li>
+          <li>Basic Analytics</li>
+          <li>24/7 Support</li>
+        </ul>
+        <button class="btn">Get Started</button>
+      </div>
+
+      <div class="pricing-card featured" data-aos="flip-left" data-aos-delay="300">
+        <h3>Pro Plan</h3>
+        <p class="price">$49/month</p>
+        <ul>
+          <li>5 Websites</li>
+          <li>Advanced Analytics</li>
+          <li>Priority Support</li>
+        </ul>
+        <button class="btn">Get Started</button>
+      </div>
+
+      <div class="pricing-card" data-aos="flip-left" data-aos-delay="400">
+        <h3>Premium Plan</h3>
+        <p class="price">$99/month</p>
+        <ul>
+          <li>Unlimited Websites</li>
+          <li>Premium Analytics</li>
+          <li>Dedicated Support</li>
+        </ul>
+        <button class="btn">Get Started</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 AD360. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
