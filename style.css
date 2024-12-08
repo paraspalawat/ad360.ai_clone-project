@@ -340,14 +340,6 @@ img {
   }
 }
 
-/* Footer */
-.footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
 /* Contact Section */
 .contact {
   padding: 4rem 1rem;
@@ -616,8 +608,141 @@ img {
 
 /* Footer */
 .footer {
-  background: #333;
+  background: linear-gradient(45deg, #1a1a2e, #16213e);
   color: #fff;
-  text-align: center;
   padding: 2rem 1rem;
-} 
+  position: relative;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.footer-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00d4ff;
+  position: relative;
+}
+
+.footer-section h3::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #00d4ff;
+  margin-top: 0.5rem;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.6;
+}
+.footer-section a{
+  font-size: 1rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.footer-section a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #00d4ff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-links a.circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background-color: #333;
+  color: #ddd;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a.circle:hover {
+  background-color: #00d4ff;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+
+.footer-bottom {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+  opacity: 0.8;
+  color: #bbb;
+  animation: fadeIn 2s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
