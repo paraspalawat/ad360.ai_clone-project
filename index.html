@@ -10,6 +10,11 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
   rel="stylesheet"
 />
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
+
 
 
   <!-- AOS CSS -->
@@ -153,47 +158,110 @@
 </section>
 
 <!-- Pricing Section -->
-<section id="pricing" class="pricing">
-  <div class="container">
-    <h2 data-aos="fade-up">Our Pricing Plans</h2>
-    <p data-aos="fade-up" data-aos-delay="100">Choose the perfect plan for your business. We offer flexible pricing to suit your needs.</p>
+<div class="pricing-section">
+  <h3>Pick the right plan for your ad budget</h3>
+  <p>
+    My monthly ad spend is up to 
+    <span class="ad-budget">$4500</span>
+  </p>
 
-    <div class="pricing-cards">
-      <div class="pricing-card" data-aos="flip-left" data-aos-delay="200">
-        <h3>Basic Plan</h3>
-        <p class="price">$19/month</p>
-        <ul>
-          <li>1 Website</li>
-          <li>Basic Analytics</li>
-          <li>24/7 Support</li>
-        </ul>
-        <button class="btn">Get Started</button>
+  <!-- Slider -->
+  <div class="slider-container">
+    <input type="range" min="1000" max="10000" value="4500" class="slider" id="adSpendSlider">
+  </div>
+
+  <!-- Pricing Plans -->
+  <div class="pricing-plans">
+    <!-- Plan 1 -->
+    <div class="plan">
+      <h4>Plan</h4>
+      <p class="price">$199/month</p>
+      <p class="details">Overages apply if ad spend limit is exceeded</p>
+      <button class="btn-primary">Proceed with this</button>
+      <p class="note">*Excluding GST</p>
+    </div>
+
+    <!-- Custom Plan -->
+    <div class="plan">
+      <h4>Higher ad spends?</h4>
+      <p class="price">Custom Price</p>
+      <button class="btn-secondary">Talk to us</button>
+      <p class="note">*Excluding GST</p>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/your-number" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<div class="testimonial-section">
+  <h2>This is why customers love us</h2>
+
+  <!-- Testimonial Slider -->
+  <div class="testimonial-container">
+    <div class="testimonial-slider">
+      <!-- Individual testimonial cards -->
+      <div class="testimonial-card">
+        <img src="https://drbgg29kvmub6.cloudfront.net/assets/ad360/positivegems.svg" alt="User 1">
+        <p>Ad360's 24/7 support is phenomenal.</p>
+        <h4>Gagan Manchanda</h4>
+        <span>CEO/Co-Founder, PositiveGems</span>
       </div>
-
-      <div class="pricing-card featured" data-aos="flip-left" data-aos-delay="300">
-        <h3>Pro Plan</h3>
-        <p class="price">$49/month</p>
-        <ul>
-          <li>5 Websites</li>
-          <li>Advanced Analytics</li>
-          <li>Priority Support</li>
-        </ul>
-        <button class="btn">Get Started</button>
+      <div class="testimonial-card">
+        <img src="https://drbgg29kvmub6.cloudfront.net/assets/ad360/guardianlink.svg" alt="User 2">
+        <p>Ad360's expert consultations are crucial.</p>
+        <h4>Kameshwaran Elangovan</h4>
+        <span>COO, Guardian Link</span>
       </div>
-
-      <div class="pricing-card" data-aos="flip-left" data-aos-delay="400">
-        <h3>Premium Plan</h3>
-        <p class="price">$99/month</p>
-        <ul>
-          <li>Unlimited Websites</li>
-          <li>Premium Analytics</li>
-          <li>Dedicated Support</li>
-        </ul>
-        <button class="btn">Get Started</button>
+      <div class="testimonial-card">
+        <img src="https://drbgg29kvmub6.cloudfront.net/assets/ad360/dresssexy.svg" alt="User 3">
+        <p>Ad360 transformed our ad strategy!</p>
+        <h4>Nitin Mittal</h4>
+        <span>Founder, Dress Sexy</span>
+      </div>
+      <!-- Duplicate the cards for infinite scrolling -->
+      <div class="testimonial-card">
+        <img src="https://drbgg29kvmub6.cloudfront.net/assets/ad360/positivegems.svg" alt="User 1">
+        <p>Ad360's 24/7 support is phenomenal.</p>
+        <h4>Gagan Manchanda</h4>
+        <span>CEO/Co-Founder, PositiveGems</span>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://drbgg29kvmub6.cloudfront.net/assets/ad360/guardianlink.svg" alt="User 2">
+        <p>Ad360's expert consultations are crucial.</p>
+        <h4>Kameshwaran Elangovan</h4>
+        <span>COO, Guardian Link</span>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://drbgg29kvmub6.cloudfront.net/assets/ad360/dresssexy.svg" alt="User 3">
+        <p>Ad360 transformed our ad strategy!</p>
+        <h4>Nitin Mittal</h4>
+        <span>Founder, Dress Sexy</span>
       </div>
     </div>
   </div>
-</section>
+    
+  
+<!-- FAQ Section -->
+<div class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <details>
+      <summary>How many domains, pixels, and pages can be used in the Account?</summary>
+      <p>You can use unlimited domains, pixels, and pages in your Ad360 account.</p>
+    </details>
+    <details>
+      <summary>What if the ad360.ai ad accounts get disabled? Will the funds be transferred?</summary>
+      <p>If an account gets disabled, funds can be transferred to another active account.</p>
+    </details>
+    <details>
+      <summary>Do you provide multiple ad accounts?</summary>
+      <p>Yes, we support multiple ad accounts for your campaigns.</p>
+    </details>
+  </div>
+</div>
 
 
 
@@ -218,10 +286,10 @@
       <div class="footer-section follow">
         <h3>Follow Us</h3>
         <div class="social-links">
-          <a href="https://facebook.com/_paras_palawat/" target="_blank" class="circle"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/_paras_palawat/" target="_blank" class="circle"><i class="fab fa-twitter"></i></a>
+          <a href="https://facebook.com" target="_blank" class="circle"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank" class="circle"><i class="fab fa-twitter"></i></a>
           <a href="https://instagram.com/_paras_palawat/" target="_blank" class="circle"><i class="fab fa-instagram"></i></a>
-          <a href="www.linkedin.com/in/paras-palawat-1545b8235" target="_blank" class="circle"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="circle"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
