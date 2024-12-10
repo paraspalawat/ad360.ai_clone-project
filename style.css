@@ -470,121 +470,172 @@ img {
   }
 }
 /* Pricing Section */
-.pricing {
-  padding: 4rem 1rem;
-  background: #f4f4f4;
-  color: #333;
-}
 
-.pricing h2 {
+/* Section Styling */
+.pricing-section {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  animation: fadeIn 1s ease-out;
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, #eef6ff, #fef7fc);
+  border-radius: 15px;
+  font-family: 'Arial', sans-serif;
 }
 
-.pricing p {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  animation: fadeIn 1s ease-out 0.5s;
-}
-
-.pricing-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.pricing-card {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.pricing-card h3 {
+.pricing-section h3 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
-.pricing-card .price {
-  font-size: 2.5rem;
+.pricing-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.ad-budget {
+  color: #0056e6;
   font-weight: bold;
-  color: rgb(12, 12, 108);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Slider Styling */
+.slider-container {
+  margin: 1.5rem auto;
+  position: relative;
+  max-width: 500px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #0056e6;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Plans */
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.plan {
+  background: #f9fcff;
+  border: 2px solid #0056e6;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: calc(50% - 1rem);
+  max-width: 300px;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+}
+
+.plan h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.plan .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0056e6;
+  margin-bottom: 0.5rem;
+}
+
+.plan .details {
+  font-size: 0.9rem;
+  color: #666;
   margin-bottom: 1rem;
 }
 
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-.pricing-card ul li {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-}
-
-.pricing-card .btn {
-  background: rgb(12, 12, 108);
-  color: #fff;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 5px;
+.plan .btn-primary,
+.plan .btn-secondary {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-.pricing-card .btn:hover {
-  background-color: rgb(12, 12, 108);
+.plan .btn-primary {
+  background: #0056e6;
+  color: #fff;
 }
 
-.pricing-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+.plan .btn-primary:hover {
+  background: #003d99;
 }
 
-.pricing-card.featured {
-  border: 2px solid rgb(12, 12, 108);
-  background: #fff7f5;
+.plan .btn-secondary {
+  background: #fff;
+  color: #0056e6;
+  border: 2px solid #0056e6;
 }
 
+.plan .btn-secondary:hover {
+  background: #0056e6;
+  color: #fff;
+}
+
+.plan .note {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .pricing-cards {
-    grid-template-columns: 1fr 1fr;
+  .plan {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 
-@media (max-width: 480px) {
-  .pricing h2 {
-    font-size: 2rem;
-  }
-
-  .pricing p {
-    font-size: 1rem;
-  }
-
-  .pricing-card .price {
-    font-size: 2rem;
-  }
-
-  .pricing-card {
-    padding: 1.5rem;
-  }
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.whatsapp-float i {
+  font-size: 1.8rem;
 }
 
 
@@ -746,3 +797,130 @@ img {
     justify-content: center;
   }
 }
+
+
+/* General Styling */
+/* Testimonial Container */
+.testimonial-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Prevents overflow */
+  background-color: #f9f9f9; /* Optional background color */
+  padding: 2rem 0;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+  display: flex;
+  width: max-content; /* Ensures no flexbox wrapping */
+  animation: scroll 20s linear infinite; /* Smooth scrolling */
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  flex: 0 0 auto; /* Prevent shrinking */
+  width: 300px; /* Fixed width for uniform cards */
+  margin: 0 1rem; /* Adds spacing between cards */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.testimonial-card span {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #555;
+}
+
+/* Smooth scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Adjust based on duplicated content */
+  }
+}
+
+
+
+/* FAQ Section */
+.faq-section {
+  padding: 3rem 1rem;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq details {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9fcff;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.faq p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Scrollbar Styling */
+.testimonial-slider::-webkit-scrollbar {
+  height: 10px;
+}
+
+.testimonial-slider::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 5px;
+}
+
+.testimonial-slider::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-card {
+    min-width: 250px;
+  }
+
+  .faq details {
+    font-size: 0.9rem;
+  }
+}
+
